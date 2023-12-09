@@ -1,0 +1,14 @@
+.main {
+    height: 700px;
+    display: flex;
+}
+
+.jumboText {
+    flex-grow: 1;
+    width: auto;
+}
+
+.jumboImage {
+    padding: 0;
+    width: 40%;
+}
