@@ -1,14 +1,12 @@
-import { Container, Group } from "@mantine/core"
+import { Group } from "@mantine/core"
 import { ServiceInfo } from "./ServiceInfo"
 
 export const ServicesBlock = () => {
     return(
-        <Container>
-            <Group>
-                <ServiceInfo/>
-                <ServiceInfo/>
-                <ServiceInfo/>
-            </Group>
-        </Container>
+        <Group justify="space-between" px={300} py={100}>
+            <ServiceInfo/>
+            <ServiceInfo/>
+            <ServiceInfo/>
+        </Group>
     )
 }

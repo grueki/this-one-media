@@ -5,6 +5,7 @@ import React from "react"
 import { Jumbotron } from './components/Jumbotron/Jumbotron'
 import { Navbar } from './components/Navbar/Navbar'
 import { ServicesBlock } from './components/Services/ServicesBlock'
+import { ContactForm } from './components/ContactForm/ContactForm'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Stack>
           <Jumbotron/>
           <ServicesBlock/>
+          <ContactForm/>
         </Stack>
       </AppShell.Main>
     </AppShell>
