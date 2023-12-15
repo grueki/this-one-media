@@ -1,6 +1,6 @@
 .group {
-    background-color: var(--mantine-color-dark-9);
+    background-color: #120e0b;
     height: 100%;
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 30%;
+    padding-right: 30%;
 }

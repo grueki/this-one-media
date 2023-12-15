@@ -2,7 +2,7 @@ import { Button, Divider, Group, Stack, Text, Textarea, TextInput, Title } from 
 
 export const ContactForm = () => {
     return(
-        <Stack align="center" bg={"dark"} p={100}>
+        <Stack align="center" bg={"#120e0b"} p={100}>
             <Group justify="center">
                 <Stack mx={50} ta={"right"}>
                     <Title c={"#ffffff"}>

@@ -4,16 +4,19 @@
     display: flex;
 }
 
-.jumboImage {
-    margin: 0;
-    padding: 0;
-    width: 40%;
-}
-
 .jumboBG {
     margin: 0;
     display: flex;
     height: 100%;
     width: auto;
     flex-grow: 1;
+}
+
+.jumboTitle {
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem;
+}
+
+.jumboText {
+    font-family: 'Josefin Sans', sans-serif;
 }

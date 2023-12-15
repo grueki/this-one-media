@@ -1,10 +1,12 @@
 import { Stack, Text, Title } from "@mantine/core"
+import { IconVideo } from "@tabler/icons-react"
 
-export const ServiceInfo = () => {
+export const ServiceInfo = (props) => {
     return(
-        <Stack ta={"center"} w={300}>
-            <Title>SERVICE ONE</Title>
-            <Text>This service is pretty good. You should consider us for all your SERVICE ONE needs.</Text>
+        <Stack ta={"center"} align={"center"} w={300}>
+            {props.icon}
+            <Title ff={"'Josefin Sans', serif"}>{props.title}</Title>
+            <Text>{props.desc}</Text>
         </Stack>
     )
 }

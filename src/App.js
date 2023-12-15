@@ -6,6 +6,8 @@ import { Jumbotron } from './components/Jumbotron/Jumbotron'
 import { Navbar } from './components/Navbar/Navbar'
 import { ServicesBlock } from './components/Services/ServicesBlock'
 import { ContactForm } from './components/ContactForm/ContactForm'
+import { AboutUs } from './components/AboutUs/AboutUs'
+import { TheTeam } from './components/TheTeam/TheTeam'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <AppShell.Main>
         <Stack>
           <Jumbotron/>
+          <AboutUs/>
+          <TheTeam/>
           <ServicesBlock/>
           <ContactForm/>
         </Stack>
