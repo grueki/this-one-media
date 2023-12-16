@@ -1,6 +1,6 @@
 import './App.css';
 import '@mantine/core/styles.css';
-import { AppShell, Stack, Text } from '@mantine/core';
+import { AppShell, Stack } from '@mantine/core';
 import React from "react"
 import { useRef } from "react"
 import { Jumbotron } from './components/Jumbotron/Jumbotron'

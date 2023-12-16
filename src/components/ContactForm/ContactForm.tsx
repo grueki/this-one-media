@@ -1,5 +1,7 @@
 import { Button, Divider, Group, Stack, Text, Textarea, TextInput, Title } from "@mantine/core"
 import { SubmitHandler, useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser'
+import { useRef } from "react";
 
 interface IFormInput {
     name: string;
@@ -9,11 +11,15 @@ interface IFormInput {
 }
 
 export const ContactForm = () => {
+    let form = useRef();
+
     const { register, handleSubmit } = useForm<IFormInput>()
-    const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
+    const onSubmit : SubmitHandler<IFormInput> = () => {
+        emailjs.sendForm("service_xaf7d4h", "template_dxo0jrw", form.current, "K7nK_5cfMAgsFoWFu");
+    } 
     
     return(
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
             <Stack align="center" bg={"#120e0b"} p={100}>
                 <Group justify="center">
                     <Stack mx={50} ta={"right"}>
