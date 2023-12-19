@@ -1,5 +1,4 @@
 import { Stack, Text, Title } from "@mantine/core"
-import { IconVideo } from "@tabler/icons-react"
 
 export const ServiceInfo = (props) => {
     return(

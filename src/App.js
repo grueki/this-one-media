@@ -1,6 +1,6 @@
 import './App.css';
 import '@mantine/core/styles.css';
-import { AppShell, Stack } from '@mantine/core';
+import { Affix, AppShell, Button, Stack, Text, Title, Transition } from '@mantine/core';
 import React from "react"
 import { useRef } from "react"
 import { Jumbotron } from './components/Jumbotron/Jumbotron'
@@ -9,17 +9,14 @@ import { ServicesBlock } from './components/Services/ServicesBlock'
 import { ContactForm } from './components/ContactForm/ContactForm'
 import { AboutUs } from './components/AboutUs/AboutUs'
 import { TheTeam } from './components/TheTeam/TheTeam'
+import { Footer } from './components/Footer/Footer'
+import { IconArrowUp } from "@tabler/icons-react"
 
 function App() {
   let home = useRef();
   let aboutUs = useRef();
   let services = useRef();
   let contact = useRef();
-
-  const scrollHome = () => {
-    // scrollHomeIntoView({ alignment: "start" })
-    console.log("fkdsfkdfdhsfkjdhfk")
-  }
 
   return (
     <AppShell header={{ height: 60 }}>
@@ -49,6 +46,9 @@ function App() {
           </div>
           <div ref={contact}>
             <ContactForm />
+          </div>
+          <div>
+            <Footer/>
           </div>
         </Stack>
       </AppShell.Main>
