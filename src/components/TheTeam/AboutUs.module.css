@@ -1,5 +1,40 @@
 .aboutUsImage {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     border-radius: 999999px;
+}
+
+@media only screen and (min-width: 600px) {
+    .aboutUsImage {
+        width: 100px;
+        height: 100px;
+        border-radius: 999999px;
+    }
+    .infoCard {
+        width: 100%;
+    }
+    .infoCardTitle {
+        font-size: 1rem;
+    }
+    .infoCardText {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .aboutUsImage {
+        width: 200px;
+        height: 200px;
+        border-radius: 999999px;
+    }
+    .infoCard {
+        width: 400px;
+        margin: 2rem;
+    }
+    .infoCardTitle {
+        font-size: 2rem;
+    }
+    .infoCardText {
+        font-size: 1rem;
+    }
 }
