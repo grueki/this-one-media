@@ -8,7 +8,6 @@ export const Jumbotron = ({ ref }) => {
                 <Center style={{width: "100%"}}>
                     <Stack p={"100px"} align={"center"} >
                         <Title className={classes.jumboTitle}> This One Media </Title>
-                        <Text>——————————————————————————————————————————————</Text>
                         <Text className={classes.jumboText} size="lg">
                         ELEVATING YOUR BRAND IMAGE WITH STYLE
                         </Text>
