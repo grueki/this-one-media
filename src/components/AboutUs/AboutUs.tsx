@@ -1,10 +1,10 @@
-import { Text } from "@mantine/core"
+import { Container, Text } from "@mantine/core"
 
 
 export const AboutUs = () => {
     return(
-        <>
-            <Text ff={"'Open Sans', sans-serif"} ta="center" p="100px">
+        <Container>
+            <Text ff={"'Open Sans', sans-serif"} p="100px">
             Bring your brand image into the spotlight with This One Media Company. Based out of Tāmaki Makaurau / Auckland, we have all the tools to make you stand out in the crowded digital world. 
             <br/><br/>
             Capturing more than just moments, This One Media Company is the curator of your brand's epic saga. Whether you’re after breathtaking still imagery, dynamic videos that command attention, or the full package with both; we specialise in bringing more eyes to your product with personable and eye-catching content.
@@ -15,6 +15,6 @@ export const AboutUs = () => {
             <br/><br/>
             This One.
             </Text>
-        </>
+        </Container>
     )
 }

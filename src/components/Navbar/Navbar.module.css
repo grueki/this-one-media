@@ -1,6 +1,9 @@
 .group {
     background-color: #120e0b;
     height: 100%;
-    padding-left: 30%;
-    padding-right: 30%;
+}
+
+.navButton {
+    padding-left: 50px;
+    padding-right: 50px;
 }
