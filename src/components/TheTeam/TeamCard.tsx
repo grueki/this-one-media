@@ -11,7 +11,7 @@ interface TeamCardProps {
 
 export const TeamCard = ({ src, name, jobTitle, description, alt } : TeamCardProps) => {
     return (
-        <Card className={classes.card} mt={50} shadow="sm" padding="lg" radius="md" withBorder>
+        <Card className={classes.card} mt={25} shadow="sm" padding="lg" radius="md" withBorder>
             <Group>
                 <Card.Section>
                     <Image

@@ -33,7 +33,7 @@ function App() {
         />
       </AppShell.Header>
       <AppShell.Main>
-        <Stack>
+        <Stack bg="#120e0b">
           <div ref={home}>
             <Jumbotron/>
           </div>
