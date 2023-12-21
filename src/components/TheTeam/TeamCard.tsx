@@ -1,4 +1,4 @@
-import { Card, Divider, Group, Image, Stack, Text } from "@mantine/core"
+import { Card, Divider, Group, Image, Paper, Stack, Text } from "@mantine/core"
 import classes from "./TheTeam.module.css"
 
 interface TeamCardProps {
@@ -11,18 +11,17 @@ interface TeamCardProps {
 
 export const TeamCard = ({ src, name, jobTitle, description, alt } : TeamCardProps) => {
     return (
-        <Card className={classes.card} mt={25} shadow="sm" padding="lg" radius="md" withBorder>
+        <Card h={240} className={classes.card} mt={25} shadow="sm" radius="md" withBorder>
             <Group>
-                <Card.Section>
+                <Paper w={300} h={240}>
                     <Image
                         src={src}
-                        h={300}
-                        w={300}
                         alt={alt}
                     />
-                </Card.Section>
-                <Stack p={50} w={500}>
-                    <Group justify="space-between" mt="md" mb="xs">
+                </Paper>
+                
+                <Stack m={0} p={50} w={500}>
+                    <Group justify="space-between">
                         <Text>{name}</Text>
                         <Text>{jobTitle}</Text>
                     </Group>

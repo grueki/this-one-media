@@ -19,7 +19,7 @@ export const ContactForm = () => {
     } 
     
     return(
-        <Stack align={"center"}>
+        <Stack align={"center"} py={50}>
             <Stack>
                 <Title c="white" ta="center" ff={"'Josefin Sans', serif"} fz="3rem" >CONTACT US</Title>
                 <Divider color="white" w={800}/>
