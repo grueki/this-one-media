@@ -10,27 +10,30 @@ import { ContactForm } from './components/ContactForm/ContactForm'
 import { AboutUs } from './components/AboutUs/AboutUs'
 import { TheTeam } from './components/TheTeam/TheTeam'
 import { Footer } from './components/Footer/Footer'
-import { IconArrowUp } from "@tabler/icons-react"
+import MediaQuery from 'react-responsive'
 
 function App() {
   let home = useRef();
   let aboutUs = useRef();
   let services = useRef();
   let contact = useRef();
+  let width = window.innerWidth;
 
   return (
-    <AppShell header={{ height: 60 }}>
+    <AppShell>
       <AppShell.Header>
-        <Navbar  
-          scrollHome={() =>
-            home.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
-          scrollAboutUs={() =>
-            aboutUs.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
-          scrollServices={() =>
-            services.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
-          scrollContact={() =>
-            contact.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
-        />
+        <MediaQuery minWidth={800}>
+          <Navbar  
+            scrollHome={() =>
+              home.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
+            scrollAboutUs={() =>
+              aboutUs.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
+            scrollServices={() =>
+              services.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
+            scrollContact={() =>
+              contact.current.scrollIntoView({ behavior: "smooth", block: "center" })} 
+          />
+        </MediaQuery>
       </AppShell.Header>
       <AppShell.Main>
         <Stack bg="#120e0b">

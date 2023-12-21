@@ -1,6 +1,6 @@
 .main {
     margin: 0;
-    height: 700px;
+    height: 300px;
     display: flex;
 }
 
@@ -14,9 +14,30 @@
 
 .jumboTitle {
     font-family: 'DM Serif Display', serif;
-    font-size: 5rem;
 }
 
 .jumboText {
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .main {
+        height: 500px;
+    }
+    .jumboTitle {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .main {
+        height: 700px;
+    }
+    .jumboTitle {
+        font-size: 5rem;
+    }
+    .jumboText {
+        font-size: 1.2rem;
+    }
 }
