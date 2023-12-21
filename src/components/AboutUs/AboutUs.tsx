@@ -1,9 +1,9 @@
 import { Container, Text } from "@mantine/core"
-
+import classes from './AboutUs.module.css'
 
 export const AboutUs = () => {
     return(
-        <Container w={1000} my={100}>
+        <Container className={classes.text} my={100}>
             <Text c="white" ta={"center"} ff={"'Open Sans', sans-serif"}>
             Bring your brand image into the spotlight with This One Media Company. Based out of Tāmaki Makaurau / Auckland, we have all the tools to make you stand out in the crowded digital world. 
             <br/><br/>

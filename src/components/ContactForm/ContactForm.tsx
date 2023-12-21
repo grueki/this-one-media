@@ -1,7 +1,8 @@
-import { Button, Divider, Group, Stack, Text, Textarea, TextInput, Title } from "@mantine/core"
+import { Button, Divider, Flex, Group, Stack, Text, Textarea, TextInput, Title } from "@mantine/core"
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
+import classes from './ContactForm.module.css'
 
 interface IFormInput {
     name: string;
@@ -25,19 +26,22 @@ export const ContactForm = () => {
                 <Divider color="white" w={800}/>
             </Stack>
             <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+                <Stack align="center">
+
                 
-                <Stack my={50} align="center" bg={"#120e0b"}>
-                    <Group my={50} justify="center">
-                        <Stack ta={"right"} w={400}>
+                <Flex my={50} align="center" bg={"#120e0b"}>
+                    <Group my={50}>
+                        <Stack className={classes.formText}>
+                        {/* <Stack ta={"right"} w={400}> */}
                             <Title c={"#ffffff"}>
                                 LIKE WHAT YOU SEE?
                             </Title>
                             <Text c={"#ffffff"}>
-                                Get in touch with us using the form opposite. We’ll get back to you as soon as we can. <br/>
+                                Get in touch with us here using the form. We’ll get back to you as soon as we can. <br/><br/>
                                 We look forward to working with you!
                             </Text>
                         </Stack>
-                        <Stack mx={50} w={400}>
+                        <Stack mx={50}className={classes.formText}>
                             <TextInput placeholder="Email" {...register("email")}/>
                             <Group justify="space-between" grow>
                                 <TextInput placeholder="Name" {...register("name")} />
@@ -46,7 +50,8 @@ export const ContactForm = () => {
                             <Textarea placeholder="Message" {...register("message")}/>
                         </Stack>
                     </Group>
-                    <Button type="submit">Submit</Button>
+                </Flex>
+                <Button type="submit">Submit</Button>
                 </Stack>
             </form>
         </Stack>

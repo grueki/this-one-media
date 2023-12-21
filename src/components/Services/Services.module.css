@@ -1,7 +1,46 @@
 .serviceInfo {
     transition: transform .2s;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .serviceInfo:hover {
     transform: scale(1.05);
+}
+
+.div {
+    width: 70vw
+}
+
+@media only screen and (min-width: 850px) {
+    .div {
+        width: 700px
+    }
+
+    .serviceInfo {
+        transition: transform .2s;
+    }
+    
+    .serviceInfo:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .div {
+        width: 900px
+    }
+
+    .servicesBlock {
+        width: 900px
+    }
+
+    .serviceInfo {
+        transition: transform .2s;
+        width: 260px;
+    }
+    
+    .serviceInfo:hover {
+        transform: scale(1.05);
+    }
 }

@@ -1,0 +1,16 @@
+.text {
+    padding: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .text {
+        width: 780px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .text {
+        width: 1000px;
+    }
+}

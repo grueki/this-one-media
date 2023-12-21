@@ -1,0 +1,11 @@
+.formText {
+    text-align: center;
+    width: 100%;
+} 
+
+@media only screen and (min-width: 916px) {
+    .formText {
+        text-align: right;
+        width: 400px;
+    }
+}
