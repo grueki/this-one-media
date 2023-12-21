@@ -11,19 +11,19 @@ interface TeamCardProps {
 
 export const TeamCard = ({ src, name, jobTitle, description, alt } : TeamCardProps) => {
     return (
-        <Card h={240} className={classes.card} mt={25} shadow="sm" radius="md" withBorder>
+        <Card className={classes.card} mt={25} shadow="sm" radius="md" withBorder>
             <Group>
-                <Paper w={300} h={240}>
+                <Paper className={classes.cardImage}>
                     <Image
                         src={src}
                         alt={alt}
                     />
                 </Paper>
                 
-                <Stack m={0} p={50} w={500}>
+                <Stack m={0} className={classes.cardText}>
                     <Group justify="space-between">
                         <Text>{name}</Text>
-                        <Text>{jobTitle}</Text>
+                        <Text fs={"italic"}>{jobTitle}</Text>
                     </Group>
                     <Divider/>
 
