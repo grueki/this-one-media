@@ -5,7 +5,7 @@ import common from '../Common.module.css'
 export const TheTeam = () => {
     return(
         <Stack bg="#120e0b"  align="center" py={100}>
-            <Stack align={"center"} w={800}>
+            <Stack align={"center"} >
                 <Title ta={"center"} c="white" fz="3rem" ff={"'Josefin Sans', serif"}>THE TEAM</Title>
                 <Divider className={common.div} color="white"/>
             </Stack>
