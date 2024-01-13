@@ -24,7 +24,7 @@ export const TeamCard = ({ src, name, jobTitle, description, alt } : TeamCardPro
                 </div>
                 <Stack m={20} mr={50} justify={"center"} className={classes.cardText}>
                     <Text className={classes.textName} fz={"lg"} p={0} fw={700}>{name}</Text>
-                    <Text c="gray" m={0} p={0} size="sm" fs={"italic"}>{jobTitle}</Text>
+                    <Text c="gray" size="sm" fs={"italic"}>{jobTitle}</Text>
                     <Divider/>
 
                     {description.map((descLine) => 

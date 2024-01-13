@@ -1,0 +1,15 @@
+.div {
+    width: 70vw
+}
+
+@media only screen and (min-width: 850px) {
+    .div {
+        width: 700px
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .div {
+        width: 900px
+    }
+}

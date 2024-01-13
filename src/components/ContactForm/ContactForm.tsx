@@ -3,6 +3,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
 import classes from './ContactForm.module.css'
+import common from '../Common.module.css'
 
 interface IFormInput {
     name: string;
@@ -21,10 +22,8 @@ export const ContactForm = () => {
     
     return(
         <Stack align={"center"} py={50}>
-            <Stack>
-                <Title c="white" ta="center" ff={"'Josefin Sans', serif"} fz="3rem" >CONTACT US</Title>
-                <Divider color="white" w={800}/>
-            </Stack>
+            <Title c="white" ta="center" ff={"'Josefin Sans', serif"} fz="3rem" >CONTACT US</Title>
+            <Divider className={common.div} color="white"/>
             <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <Stack align="center">
 

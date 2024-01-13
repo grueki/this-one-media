@@ -1,12 +1,13 @@
 import { Divider, Stack, Title } from "@mantine/core"
 import { TeamCard } from "./TeamCard"
+import common from '../Common.module.css'
 
 export const TheTeam = () => {
     return(
         <Stack bg="#120e0b"  align="center" py={100}>
             <Stack align={"center"} w={800}>
                 <Title ta={"center"} c="white" fz="3rem" ff={"'Josefin Sans', serif"}>THE TEAM</Title>
-                <Divider w="700" color="white"/>
+                <Divider className={common.div} color="white"/>
             </Stack>
             
             <TeamCard src={"https://raw.githubusercontent.com/grueki/this-one-media-images/main/img/david2.jpg"}

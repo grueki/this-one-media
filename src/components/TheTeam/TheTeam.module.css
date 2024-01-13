@@ -9,18 +9,33 @@
     transform: scale(1.02);
 }
 
+
 .cardText {
-    width: 220px;
+    width: 40vw;
     height: 240px;
 }
 
 .cardImage {
-    width: 140px;
-    height: 280px;
+    width: 130px;
+    height: 100%;
 }
 
 .textName {
     margin-bottom: -15px;
+}
+
+@media only screen and (min-width: 480px) {
+    .cardText {
+        width: 220px;
+    }
+
+    .cardImage {
+        width: 140px;
+        height: 280px;
+    }
+    .textName {
+        margin-top: -15px;
+    }
 }
 
 @media only screen and (min-width: 660px) {
@@ -31,9 +46,6 @@
     .cardImage {
         width: 220px;
         height: 280px;
-    }
-    .textName {
-        margin-top: -15px;
     }
 }
 
