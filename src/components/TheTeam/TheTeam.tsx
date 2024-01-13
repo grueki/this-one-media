@@ -4,9 +4,9 @@ import { TeamCard } from "./TeamCard"
 export const TheTeam = () => {
     return(
         <Stack bg="#120e0b"  align="center" py={100}>
-            <Stack w={800}>
+            <Stack align={"center"} w={800}>
                 <Title ta={"center"} c="white" fz="3rem" ff={"'Josefin Sans', serif"}>THE TEAM</Title>
-                <Divider color="white"/>
+                <Divider w="700" color="white"/>
             </Stack>
             
             <TeamCard src={"https://raw.githubusercontent.com/grueki/this-one-media-images/main/img/david2.jpg"}

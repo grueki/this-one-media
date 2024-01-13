@@ -32,12 +32,12 @@
     }
 
     .servicesBlock {
-        width: 900px
+        width: 1200px
     }
 
     .serviceInfo {
         transition: transform .2s;
-        width: 260px;
+        width: 320px;
     }
     
     .serviceInfo:hover {

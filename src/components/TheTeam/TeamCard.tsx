@@ -13,18 +13,18 @@ export const TeamCard = ({ src, name, jobTitle, description, alt } : TeamCardPro
     return (
         <Card className={classes.card} mt={25} shadow="sm" radius="md" withBorder>
             <Group>
-                <Paper className={classes.cardImage}>
+                <div className={classes.cardImage}>
                     <Image
                         src={src}
                         alt={alt}
+                        fit={"cover"}
+                        style={{height: "100%", width: "100%"}}
+                        fallbackSrc="https://placehold.co/600x400?text=Placeholder"
                     />
-                </Paper>
-                
-                <Stack m={0} className={classes.cardText}>
-                    <Group justify="space-between">
-                        <Text>{name}</Text>
-                        <Text fs={"italic"}>{jobTitle}</Text>
-                    </Group>
+                </div>
+                <Stack m={20} mr={50} justify={"center"} className={classes.cardText}>
+                    <Text className={classes.textName} fz={"lg"} p={0} fw={700}>{name}</Text>
+                    <Text c="gray" m={0} p={0} size="sm" fs={"italic"}>{jobTitle}</Text>
                     <Divider/>
 
                     {description.map((descLine) => 
